@@ -1,24 +1,20 @@
 
-public class ServidoresAtivos {
+public class Servidores{
 
     //Criar um programa que gerencia os servidores ativos de uma empresa.
 
     private String nomeServidor;
     private String cpfServidor;
-    private String orgaoSevidor;
     private String salarioServidor;
 
-    public ServidoresAtivos (String nomeServidor, String cpfServidor, String orgaoSevidor, String salarioServidor) {
+    public Servidores(String nomeServidor, String cpfServidor, String salarioServidor) {
         this.nomeServidor = nomeServidor;
         this.cpfServidor = cpfServidor;
-        this.orgaoSevidor = orgaoSevidor;
         this.salarioServidor = salarioServidor;
         
     }
 
 
-        
-    
 
         // get
         public String getNomeServidor(){
@@ -30,6 +26,8 @@ public class ServidoresAtivos {
             System.out.println("Nome: " +this.nomeServidor);
             
         }
+
+
     
         // get
         public String getCpfServidor(){
@@ -42,15 +40,7 @@ public class ServidoresAtivos {
         }
 
 
-        // get
-        public String getOrgaoServidor(){
-            return orgaoSevidor;
-        }
-        // set
-        public void setOrgaoServidor(String orgaoServidor){
-            this.orgaoSevidor = orgaoServidor;
-            System.out.println("ÓRGÃO: " + this.orgaoSevidor);
-        }
+        
 
                 
         // get
@@ -60,9 +50,20 @@ public class ServidoresAtivos {
         // set
         public void setSalarioServidor(String salarioServidor){
             this.salarioServidor = salarioServidor;
-            System.out.println("SALÁRIO" + this.salarioServidor);
+            System.out.println("SALÁRIO: " + this.salarioServidor);
         }
     
+
+
+
+
+        public void nomeServidor(){
+            setNomeServidor(nomeServidor);
+            setCpfServidor(cpfServidor);
+            setSalarioServidor(salarioServidor);
+            
+        
+        }
         
         
         
